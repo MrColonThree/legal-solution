@@ -79,7 +79,7 @@
               </label>
               <ul
                 tabindex="0"
-                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow text-primary bg-blue-200 rounded-box w-52"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow text-primary bg-white rounded-box w-52"
               >
                 <li>
                   <a>Home <i class="fa-solid fa-chevron-right"></i></a>
@@ -101,36 +101,39 @@
             <img src="images/logo2.png" alt="" />
           </div>
           <div class="hidden lg:flex">
-            <ul class="menu menu-horizontal px-1 text-secondary">
+            <ul class="menu menu-horizontal  px-1 text-secondary">
               <li>
-                <a>Home <i class="fa-solid fa-chevron-right"></i></a>
+                <a class="hover:bg-yellow-700 hover:text-white">Home <i class="fa-solid fa-chevron-right"></i></a>
               </li>
               <li>
-                <a>Services <i class="fa-solid fa-chevron-right"></i></a>
+                <a class="hover:bg-yellow-700 hover:text-white">Services <i class="fa-solid fa-chevron-right"></i></a>
               </li>
               <li>
-                <a>Cases <i class="fa-solid fa-chevron-right"></i></a>
+                <a class="hover:bg-yellow-700 hover:text-white">Cases <i class="fa-solid fa-chevron-right"></i></a>
               </li>
               <li>
-                <a>Blog <i class="fa-solid fa-chevron-right"></i></a>
+                <a class="hover:bg-yellow-700 hover:text-white">Blog <i class="fa-solid fa-chevron-right"></i></a>
               </li>
               <li>
-                <a>Contact Us <i class="fa-solid fa-chevron-right"></i></a>
+                <a class="hover:bg-yellow-700 hover:text-white">Contact Us <i class="fa-solid fa-chevron-right"></i></a>
               </li>
             </ul>
           </div>
           <div class="">
-            <a
-              class="p-4 md:px-6 md:py-4 text-white bg-primary md:text-xl font-semibold rounded-lg hover:bg-yellow-700 focus:outline-none"
-              >Free Consultation</a
+            <button
+              class="p-3 md:px-6 md:py-3 text-white bg-primary md:text-xl font-semibold rounded-lg hover:bg-yellow-700 focus:outline-none "
+              >Free Consultation</button
             >
           </div>
         </div>
       </nav>
       <!-- Hero Section -->
-      <div class="w-full justify-center bg-cover bg-center bg-zero h-[500px]">
+      <div class="w-full justify-center bg-cover bg-center bg-zero h-[500px] relative">
+        <div class="">
+          <img class="absolute h-[500px] w-full z-10" src="images/Rectangle 5.png" alt="">
+        </div>
         <div
-          class="flex items-center justify-center h-full w-full bg-gray-900 bg-opacity-50"
+          class="flex items-center justify-center h-full w-full z-20 absolute"
         >
           <div class="text-center">
             <h1
@@ -497,7 +500,7 @@
           <div class="grid grid-cols-1 md:grid-cols-2 flex-1">
             <!-- Card-1 -->
             <div
-              class="hover:bg-cardbg flex flex-col items-center justify-center text-center p-5 md:p-16 border-0 md:border-b-2 md:border-r-2 border-border"
+              class="hover:bg-cardbg flex flex-col items-center justify-center text-center py-4 md:p-16 border-0 md:border-b-2 md:border-r-2 border-border"
             >
               <img src="images/location.png" alt="" />
               <h1
@@ -512,13 +515,13 @@
             </div>
             <!-- Card-2 -->
             <div
-              class="hover:bg-cardbg flex flex-col items-center justify-center text-center p-5 md:p-16 border-0 md:border-b-2 border-border"
+              class="hover:bg-cardbg flex flex-col items-center justify-center text-center py-4 md:p-16 border-0 md:border-b-2 border-border"
             >
               <img src="images/call.png" alt="" />
               <h1
                 class="text-3xl font-extrabold font-garamond text-tertiary mt-6"
               >
-                Address
+              Call Us
               </h1>
               <p class="font-poppins text-secondary my-6">
                 +88 01750 00 00 00 <br />
@@ -527,7 +530,7 @@
             </div>
             <!-- Card-3 -->
             <div
-              class="hover:bg-cardbg flex flex-col items-center justify-center text-center p-5 md:p-16 border-0 md:border-r-2 border-border"
+              class="hover:bg-cardbg flex flex-col items-center justify-center text-center py-4 md:p-16 border-0 md:border-r-2 border-border"
             >
               <img src="images/email.png" alt="" />
               <h1
@@ -542,7 +545,7 @@
             </div>
             <!-- Card-4 -->
             <div
-              class="hover:bg-cardbg flex flex-col items-center justify-center text-center p-5 md:p-16"
+              class="hover:bg-cardbg flex flex-col items-center justify-center text-center py-4 md:p-16"
             >
               <img src="images/time.png" alt="" />
               <h1
@@ -587,6 +590,40 @@
         </div>
       </section>
     </main>
-    <footer></footer>
+    <footer class=" bg-[#111]  my-20 py-20">
+     <div class="mx-auto max-w-screen-xl footer text-base-content text-[#CFCFCF]  items-start p-5 md:p-10 gap-14 md:gap-16  lg:gap-20">
+      <div>
+        <span class="footer-title mb-8"><img src="images/logo.png" alt=""></span> 
+        <p class="max-w-[260px]">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+      </div> 
+      <div class="">
+        <span class=" text-white font-garamond font-extrabold text-2xl  mb-8">Usefull Link</span> 
+        <a class="link link-hover">Home</a> 
+        <a class="link link-hover">About Us</a> 
+        <a class="link link-hover">Cases</a> 
+        <a class="link link-hover">Blog</a>
+        <a class="link link-hover">Contact Us</a>
+      </div> 
+      <div class="leading-6">
+        <span class=" text-white font-garamond font-extrabold text-2xl  mb-8">Contact Now</span> 
+        <a class="">555 4th 5t NW, Washington <br>
+          DC 20530, United States</a> 
+        <a class="">+88 01750 000 000 <br>
+          +88 01750 000 000</a> 
+        <a class="">info@gmail.com <br>
+          info@gmail.com</a>
+      </div> 
+      <div class="leading-6">
+        <span class=" text-white font-garamond font-extrabold text-2xl  mb-8">Subscribe</span>
+        <p class="mb-10 max-w-[250px]">Subscribe for our latest & Articles. We Won't Give You Spam Mails</p>
+        <div class="form-control w-80"> 
+          <div class="relative">
+            <input type="text" placeholder="username@site.com" class="input input-bordered w-full pr-16 h-14" /> 
+            <button class="p-[14px] h-14 bg-primary absolute top-0 right-0  text-white md:text-xl font-semibold rounded-lg hover:bg-yellow-700 focus:outline-none"><i class="fa-solid fa-location-arrow"></i></button>
+          </div>
+        </div>
+      </div>
+     </div>
+    </footer>
   </body>
 </html>
